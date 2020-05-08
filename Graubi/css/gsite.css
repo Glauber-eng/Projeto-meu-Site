@@ -15,7 +15,7 @@ body {
 .foto {
     height: 250px;
     width: 300px;
-    margin-right: 590px;
+    margin-right: 590px; 
     float: right;
 }
 .historia {
@@ -32,27 +32,39 @@ body {
 }
 .segunda {
     float: right ;
-    margin-top: 70px;
-    margin-right: 70px;
+    margin-top: 30px;
+    margin-right: 30px;
     height: 300px;
     width: 40%;
 }
 .skate-video {
-    height: 450px;
+    height: 345px;
     width: 100%;
     background: black;
 }
 
 .gif {
-    height: 500px;
+    height: 400px;
     width: 500px;
     margin-left: 235px;
-    margin-top: 20px;
+    padding-bottom: 10px;
 }
 .fim {
     height: 100px;
     width: 100%;
     background: gray;
+}
+.made {
+    font-family: 'Staatliches', cursive;
+    height: 80px;
+    width: 400px;
+    padding-top: 4px;
+    padding-left: 10px;
+    
+}.footer {
+    height: 212px;
+    width: 100%;
+    background: url("../imagens/footer.jpg") no-repeat center center;
 }
 
 
