@@ -49,5 +49,10 @@ body {
     margin-left: 235px;
     margin-top: 20px;
 }
+.fim {
+    height: 100px;
+    width: 100%;
+    background: gray;
+}
 
 
