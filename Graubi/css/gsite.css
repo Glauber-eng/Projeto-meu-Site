@@ -37,6 +37,24 @@ body {
     height: 300px;
     width: 40%;
 }
+
+.lista {
+    height: 50px;
+    width: 20%;
+    color: white;
+    float: left;
+}
+.lista li {
+    margin-top: 5px;
+    list-style: none;
+    padding: 20px; 
+}
+.lista li a {
+    font-family: 'Anton', sans-serif;
+    color: blue;
+    text-decoration: none;
+}
+
 .skate-video {
     height: 345px;
     width: 100%;
@@ -45,8 +63,8 @@ body {
 
 .gif {
     height: 400px;
-    width: 500px;
-    margin-left: 235px;
+    width: 450px;
+    margin-bottom: 200px;
     padding-bottom: 10px;
 }
 .fim {
@@ -60,8 +78,13 @@ body {
     width: 400px;
     padding-top: 4px;
     padding-left: 10px;
+}
+.made a i {
+    height: 10px;
+    width: 10px;
+}
     
-}.footer {
+.footer {
     height: 212px;
     width: 100%;
     background: url("../imagens/footer.jpg") no-repeat center center;
