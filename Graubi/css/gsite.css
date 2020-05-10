@@ -79,9 +79,11 @@ body {
     padding-top: 4px;
     padding-left: 10px;
 }
-.made a i {
-    height: 10px;
-    width: 10px;
+.made .fa {
+    float: right;
+    width: 70px;
+    color: #000000;
+    padding: 10px;
 }
     
 .footer {
