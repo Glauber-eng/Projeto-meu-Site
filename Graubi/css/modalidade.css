@@ -27,16 +27,18 @@ body {
     height: 20px;
     width: 10%;
     color: white;
-    float: left;
+    float: right;
+    margin-right: 50px;
+    text-transform: uppercase;
+    text-decoration: #000000
 }
 
 .lista2 ul li {
-    margin-top: 5px;
+    margin-top: 500px;
     list-style: none;
     padding: 20px; 
     float: left;
     font-family: 'Anton', sans-serif;
-    display: inline-block;
 }
 
 a {

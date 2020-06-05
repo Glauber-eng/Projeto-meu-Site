@@ -1,13 +1,18 @@
 body {
- margin: 0px;
- padding: 0px;
+    margin: 0px;
+  /* The image used */
+  background-image: url("../imagens/skt4.png");
+      
+  /* Set a specific height */
+height: 500px;
+
+  /* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
-.imagem{
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    background: url("../imagens/skt4.png") no-repeat center center;
-}
+
 .header {
     height: 100px;
     width: 100%
@@ -19,14 +24,14 @@ body {
     float: right;
 }
 .historia {
+    margin-top: 100px;
     font-family: 'Share', cursive;
     height: 240px;
     width: 760px;
     float: left;
-    margin-top: 118px;
     padding: 15px;
-    border: 3px black solid;
     margin-left: 10px;
+    border: 3px black solid;
     background-color: rgba(0,0,0,0.7); 
     color: white;
 }
@@ -38,39 +43,64 @@ body {
     width: 40%;
 }
 
-.lista {
-    height: 50px;
-    width: 20%;
+.login {
+    margin-top: 50px;
+    padding-top: 30px;
+    height:150px;
+    border: 3px black solid;
+    background-color:black; 
     color: white;
+    margin-left: 400px;
+    width: 500px;
+}
+
+form {
+    margin-left: 100px;
+    width: 50px;
+    float: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form label {
     float: left;
 }
-.lista li {
-    margin-top: 5px;
-    list-style: none;
-    padding: 20px; 
+
+.caixa {
+    width: 250px;
+    height: 20px;
+    background-color: white;
 }
-.lista li a {
-    font-family: 'Anton', sans-serif;
-    color: blue;
-    text-decoration: none;
+
+.botao_acesso {
+    margin-top: 17px;
+    margin-left: 90px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .skate-video {
     height: 345px;
     width: 100%;
     background: black;
+    margin-top: 50%;
+    display: flex;
 }
 
 .gif {
     height: 400px;
-    width: 450px;
+    width: 500px;
     margin-bottom: 200px;
     padding-bottom: 10px;
+    margin-left: 300px;
 }
+
 .fim {
     height: 100px;
     width: 100%;
     background: gray;
+    margin-top: 13%;
 }
 .made {
     font-family: 'Staatliches', cursive;
@@ -86,10 +116,5 @@ body {
     padding: 10px;
 }
     
-.footer {
-    height: 212px;
-    width: 100%;
-    background: url("../imagens/footer.jpg") no-repeat center center;
-}
 
 
