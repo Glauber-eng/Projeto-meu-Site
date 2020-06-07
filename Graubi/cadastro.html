@@ -6,29 +6,36 @@
     <title>Cadastrar</title>
     <link rel="stylesheet" href="../Graubi/css/cadastro.css">
     <link rel="shortcut icon" href="./imagens/icon.jpg" type="image/x-icon">
+
 </head>
 <body>
     <center>
-        <h3>Tela de cadastro</h3>
         <div class="cadastro">
+                
             <div class="container">
+                    <img src="https://fontmeme.com/permalink/200607/9f747bbac1f08a1dcaf47ee6d8bd6f98.png" alt="fontes-de-grafite" border="0"></a><br>
             <form action="">
-                <label for="nomesobrenome"> Nome Sobrenome
-                    <input type="text" id="nomesobrenome">
+                <label for="nomesobrenome">
+                    <input type="text" id="nomesobrenome" placeholder="Nome Sobrenome">
                 </label><br>
-                <label for="email">Email
-                    <input type="email" id="email">
+                <label for="email">
+                    <input type="email" id="email" placeholder="Email">
               </label><br>
-              <label for="senha">Senha
-                  <input type="text" id="senha">
+              <label for="senha">
+                  <input type="text" id="senha" placeholder="Senha">
               </label><br>
-              <label for="confirmarsenha"> Confirme a Senha
-                  <input type="text" id="confirmarsenha">
+              <label for="confirmarsenha">
+                  <input type="text" id="confirmarsenha" placeholder="Confirme a Senha">
               </label><br>
-              <label for="manobra"> Manobra Favorita
-                  <input type="text" id="manobra">
-              </label><br>
-                   <input type="submit" placeholder="Cadastrar">
+                  <select name="manobra" id="manobra">
+                      <option value="selecao">Escolha uma manobra que queira Aprender</option>
+                      <option value="nolliekick">Nollie 360</option>
+                      <option value="hardflip">Hardflip</option>
+                      <option value="nollieflip">Nollie flip</option>
+                      <option value="ssheelflip">Sweet Heel</option>
+                      <option value="laserflip">Laser Flip</option>
+                  </select><br>
+                  <button onclick="cadastrar()">Cadastrar</button>
             </form>
           </div>
         </div>
