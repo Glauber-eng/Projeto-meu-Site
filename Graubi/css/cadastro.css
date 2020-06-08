@@ -24,6 +24,7 @@ body {
     background-color: rgba(0,0,0,0.7); 
     color: white;
     padding-bottom: 10px;
+    border-radius: 17px;
 }
 
 .container img{

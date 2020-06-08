@@ -45,10 +45,10 @@ background-size: cover;
 
  .login { 
     margin-top: 50px;
-    padding-top: 30px;
-    padding-left: 70px;
+    padding-top: 50px;
+    padding-left: 100px;
     height:150px;
-    margin-left: 450px;
+    margin-left: 400px;
     width: 500px;
 }
 
@@ -86,13 +86,18 @@ form label {
     margin-top: 50%;
     display: flex;
 }
+.video_yout {
+    height: 150px;
+    width: 10%;
+    padding-top: 17px;
+    padding-left: 17px;
+}
 
 .gif {
     height: 400px;
-    width: 500px;
+    width: 400px;
     margin-bottom: 200px;
     padding-bottom: 10px;
-    margin-left: 50px;
 }
 
 .inventor {
