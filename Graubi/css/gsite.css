@@ -95,11 +95,37 @@ form label {
     margin-left: 50px;
 }
 
+.inventor {
+    margin-top: 200px;
+    font-family: 'Share', cursive;
+    height: 350px;
+    width: 1000px;
+    float: right;
+    padding: 15px;
+    margin-left: 10px;
+    border: 3px black solid;
+    background-color: rgba(0,0,0,0.7); 
+    color: white; 
+    margin-right: 50px;
+}
+
+.texto_inventor {
+    float: right;
+    width: 600px;
+}
+
+.rodney {
+    width: 357px;
+    height: 310px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
 .fim {
     height: 100px;
     width: 100%;
     background: gray;
-    margin-top: 13%;
+    margin-top: 50%;
 }
 .made {
     font-family: 'Staatliches', cursive;
