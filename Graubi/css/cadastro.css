@@ -17,13 +17,12 @@ body {
 .container {
     padding-top: 30px;
     width: 25%;
-    height: 330px;
+    height: 270px;
     margin-top: 70px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 3px black solid;
     background-color: rgba(0,0,0,0.7); 
     color: white;
-    padding-bottom: 10px;
     border-radius: 17px;
 }
 
@@ -31,9 +30,17 @@ body {
     padding-bottom: 20px;
 }
 
+form {
+    height: 300px;
+}
+
 label input {
     display:block;
     border-radius: 7px;
+}
+
+select {
+    
 }
     
 button {

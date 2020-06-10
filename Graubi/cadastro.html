@@ -16,17 +16,17 @@
                     <img src="https://fontmeme.com/permalink/200607/9f747bbac1f08a1dcaf47ee6d8bd6f98.png" alt="fontes-de-grafite" border="0"></a><br>
             <form action="">
                 <label for="nomesobrenome">
-                    <input type="text" id="nomesobrenome" placeholder="Nome Sobrenome">
+                    <input type="text" id="nomesobrenome" placeholder="Nome Sobrenome" required>
                 </label><br>
                 <label for="email">
-                    <input type="email" id="email" placeholder="Email">
+                    <input type="email" id="email" placeholder="Email" required>
               </label><br>
-              <label for="senha">
-                  <input type="text" id="senha" placeholder="Senha">
+              <!-- <label for="senha"> 
+                  <input type="text" id="senha" placeholder="Senha" required>
               </label><br>
               <label for="confirmarsenha">
-                  <input type="text" id="confirmarsenha" placeholder="Confirme a Senha">
-              </label><br>
+                  <input type="text" id="confirmarsenha" placeholder="Confirme a Senha" required>
+              </label>--><br>
                   <select name="manobra" id="manobra">
                       <option value="selecao">Escolha uma manobra que queira Aprender</option>
                       <option value="nolliekick">Nollie 360</option>
@@ -36,10 +36,17 @@
                       <option value="laserflip">Laser Flip</option>
                   </select><br>
                   <a href="../Graubi/Glauber Site.html">
-                  <button>Cadastrar</button></a>
+                  <button onclick="botao_cadastro()">Cadastrar</button></a>
             </form>
           </div>
         </div>
     </center>
 </body>
 </html>
+<script>
+    function botao_cadastro() {
+        if(!nomesobrenome.value){
+            return alert("Prencher Nome!")
+        }
+    }
+</script>
