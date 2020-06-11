@@ -126,11 +126,30 @@ form label {
     padding-left: 10px;
 }
 
+.sobre_skate {
+    font-family: 'Share', cursive;
+    height: 250px;
+    width: 30%;
+    float: left;
+    border: 3px black solid;
+    background-color: rgba(0,0,0,0.7); 
+    color: white;
+    margin-top: 170px;
+    margin-left: 70px;
+    padding-left: 10px;
+}
+
+.gif_modalidade img {
+    height: 200px;
+    width: 200px;
+    margin-left: 100px;
+}
+
 .fim {
     height: 100px;
     width: 100%;
     background: gray;
-    margin-top: 50%;
+    margin-top: 80%;
 }
 .made {
     font-family: 'Staatliches', cursive;

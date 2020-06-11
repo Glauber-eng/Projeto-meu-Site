@@ -23,7 +23,47 @@ body {
     color: white;
 }
 
-.lista2 {
+.bowl_proximo img {
+    height: 200px;
+    width: 200px;
+    margin-top: 33%;
+    float: right;
+    margin-right: 70px;
+}
+
+.halfpipe_proximo img {
+    height: 200px;
+    width: 200px;
+    margin-top: 33%;
+    float: right;
+    margin-right: 70px;
+}
+
+.freestyle_proximo img {
+    height: 170px;
+    width: 200px;
+    float: right;
+    margin-top: 35%;
+
+}
+
+.downhill_proximo img {
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin-left: 70px;
+    margin-top: 33%;
+}
+
+.inicio_proximo img {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 42%;
+}
+
+ /* .lista2 { 
     height: 20px;
     width: 10%;
     color: white;
@@ -31,9 +71,9 @@ body {
     margin-right: 50px;
     text-transform: uppercase;
     text-decoration: #000000
-}
+} */
 
-.lista2 ul li {
+/* .lista2 ul li {
     margin-top: 500px;
     list-style: none;
     padding: 20px; 
@@ -44,7 +84,7 @@ body {
 a {
     text-decoration: none;
     color: #000000;
-}
+} */
 
 
 
