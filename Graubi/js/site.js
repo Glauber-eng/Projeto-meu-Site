@@ -1,11 +1,33 @@
-function login_usuario() {
-    var sobre_email = email.value;
-     var resultado = sobre_email.indexOf('@')>=0;
-     var resul = sobre_email.indexOf('.')>=0;
-    if (resultado && resul) {
-        resposta.innerHTML = `Valido`;
-    }
-    else {
-        resposta.innerHTML = `Não valido`;
-    }
-}
+function botao_cadastro() {
+    var erros = validacao();
+        mensagem_erro.innerHTML = "";
+        
+        if(erros.length > 0){
+          for(var i=0; i < erros.length; i++){
+              var erro = erros[i];
+              var li = document.createElement("li");
+              li.innerHTML = erro;
+              mensagem_erro.appendChild(li);
+          }
+        }else{
+           // Código que envia os dados
+          // para o BD
+        }       
+      }
+
+      function validacao(){
+        var erros = [];
+
+        if(!nomesobrenome.value){
+          erros.push("Prencher nome!");
+        }
+
+        if(!email.value ||
+            (email.value.search("@") == -1) ||
+            (email.value.search(".") == -1) ||
+            (email.value.search(" ") >= '')){
+          erros.push("O formato do email é: usuario@dominio.com");
+        }
+
+        return erros;
+      }
