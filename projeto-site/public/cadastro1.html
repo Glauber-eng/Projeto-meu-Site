@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href=".//css/cadastro.css">
+    <link rel="shortcut icon" href=".//imagens/icon.jpg" type="image/x-icon">
+
+</head>
+<body>
+    <center>
+        <div class="cadastro">
+                
+            <div class="container">
+                    <img src="https://fontmeme.com/permalink/200607/9f747bbac1f08a1dcaf47ee6d8bd6f98.png" alt="fontes-de-grafite" border="0"></a>
+                    <br>
+
+                    <form id="form_login" onsubmit="return entrar()"> 
+                        <ul id="mensagem_erro" class="m-erro">
+                        </ul>                
+                <!-- <label for="nomesobrenome">
+                    <input type="text" id="nomesobrenome" placeholder="Nome Sobrenome">
+                </label><br> -->
+
+                <label for="email">
+                    <input type="email" name="login" id="email" placeholder="Email">
+              </label><br>
+
+               <label for="senha"> 
+                  <input type="text" name="senha" id="senha" placeholder="Senha">
+              </label><br>
+
+              <!-- <label for="confirmarsenha">
+                  <input type="text" id="confirmarsenha" placeholder="Confirme a Senha" required>
+              </label><br> -->
+
+                  <!-- <select name="manobra" id="manobra">
+                      <option value="selecao">Escolha uma manobra que queira Aprender</option>
+                      <option value="nolliekick">Nollie 360</option>
+                      <option value="hardflip">Hardflip</option>
+                      <option value="nollieflip">Nollie flip</option>
+                      <option value="ssheelflip">Sweet Heel</option>
+                      <option value="laserflip">Laser Flip</option>
+                  </select><br> -->
+                  <a href="../Index.html">
+                  <button >Cadastrar</button></a>
+                </form>
+          </div>
+        </div>
+    </center>
+</body>
+</html>
+<script>
+        function entrar() {
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+            
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.email_analista;
+                    sessionStorage.nome_usuario_meuapp = json.nome_analista;
+                    
+                    window.location.href = 'Index1.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                response.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+</script>
